@@ -47,10 +47,10 @@ export function ProductShowcase({ compact = false, className = "" }: Illustratio
       </div>
     ) : (
       <Image
-        src={MEDIA.product}
-        alt="Capa real do Meu Primeiro Inglês Divertido acompanhada de páginas de cores, números e animais do PDF"
-        width={1450}
-        height={1190}
+        src={compact ? "/images/ludipim-capa.webp" : MEDIA.product}
+        alt={compact ? "Capa oficial do Meu Primeiro Inglês Divertido" : "Capa real do Meu Primeiro Inglês Divertido acompanhada de páginas de cores, números e animais do PDF"}
+        width={compact ? 900 : 1450}
+        height={compact ? 1274 : 1190}
         sizes={compact ? "(max-width: 680px) 94vw, 510px" : "(max-width: 680px) 96vw, (max-width: 1100px) 46vw, 600px"}
         quality={86}
         priority={!compact}
