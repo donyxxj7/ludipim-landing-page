@@ -29,23 +29,6 @@ function BuyButton({ children, className = "" }: { children: React.ReactNode; cl
   return <a className={`button button-primary ${className}`} href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">{children}<ArrowRight size={18} aria-hidden="true" /></a>;
 }
 
-function WorkbookMockup() {
-  // Temporary CSS illustration: replace with the official cover and real PDF previews when added.
-  return <div className="book-stage" aria-label="Ilustração demonstrativa de um caderno de atividades, não é a capa oficial do produto">
-    <span className="float-star star-a">✦</span><span className="float-star star-b">✦</span><span className="float-dot dot-a" />
-    <div className="book-shadow" />
-    <div className="workbook">
-      <div className="workbook-top"><span>40 páginas • PDF A4</span><span className="mini-sun">✦</span></div>
-      <div className="workbook-title">Meu Primeiro<br /><b>Inglês Divertido</b></div>
-      <div className="workbook-art"><div className="cloud cloud-one"/><div className="cloud cloud-two"/><div className="rainbow"><i/><i/><i/></div><div className="book-character"><span>ABC</span><small>hello!</small></div><div className="pencil-shape"/></div>
-      <div className="workbook-bottom">CORES · NÚMEROS · ANIMAIS</div>
-    </div>
-    <div className="sample-sheet"><div className="sample-sheet-label">ATIVIDADE</div><div className="sample-sheet-title">Match the colors!</div><div className="sample-row"><i className="swatch swatch-pink"/><span/><i className="swatch swatch-yellow"/></div><div className="sample-row"><i className="swatch swatch-blue"/><span/><i className="swatch swatch-green"/></div><div className="sample-row"><i className="swatch swatch-green"/><span/><i className="swatch swatch-pink"/></div><div className="sample-doodle">✿</div></div>
-    <div className="floating-note"><span className="note-icon"><Printer size={17}/></span><span><b>PDF digital</b><small>Pronto para imprimir</small></span></div>
-    <div className="floating-age"><GraduationCap size={17}/> Para 6–9 anos</div>
-  </div>;
-}
-
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
