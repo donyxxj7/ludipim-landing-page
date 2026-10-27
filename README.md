@@ -44,6 +44,5 @@ components/
   ProductMedia.tsx  composição de produto e galeria real, responsiva
   robots.ts       regras para rastreadores
   sitemap.ts      sitemap básico
-components/       reservado para componentes compartilhados adicionais
 public/images/    logo e futuras artes oficiais
 ```
