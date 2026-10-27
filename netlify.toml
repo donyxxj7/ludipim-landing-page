@@ -1,0 +1,8 @@
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Next.js 15 supported by Netlify OpenNext adapter, auto-provisioned by Netlify.
