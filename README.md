@@ -24,7 +24,7 @@ pnpm build
 ## Imagens
 
 - `public/images/ludipim-logo.webp`: logo oficial fornecida, otimizada para web.
-- A capa oficial do produto e as imagens reais das páginas de atividade ainda precisam ser adicionadas em `public/images/`. A composição do caderno e os cartões da galeria são ilustrações CSS provisórias, identificadas no código e na interface; não representam páginas oficiais do PDF.
+- As artes oficiais ficam em `public/images/`: `ludipim-produto-hero.webp`, `ludipim-capa.webp`, `ludipim-cores.webp`, `ludipim-numeros.webp`, `ludipim-animais.webp` e `ludipim-decoracao-banner.webp`. O pacote de arquivos é fornecido separadamente para importar no repositório. Até a inclusão desses WebP, a interface usa fallback honesto em vez de imagens quebradas. As três prévias foram extraídas do material real; não são ilustrações inventadas.
 - O PDF comercial não deve ser adicionado ao repositório.
 
 ## Configuração
@@ -40,6 +40,8 @@ app/
   globals.css     estilos responsivos e identidade visual
   layout.tsx      metadata, Open Graph e estrutura HTML
   page.tsx        landing page e interações de FAQ/menu
+components/
+  ProductMedia.tsx  composição de produto e galeria real, responsiva
   robots.ts       regras para rastreadores
   sitemap.ts      sitemap básico
 components/       reservado para componentes compartilhados adicionais
