@@ -5,13 +5,13 @@
 ## Informações do fornecedor — campos a validar fora do repositório
 - Nome / identificação legal exigida: **PENDENTE**
 - Endereço físico para contato exigido conforme legislação: **PENDENTE**
-- E-mail de atendimento efetivo, testado: **PENDENTE**
-- Contato para reclamações, cancelamento e arrependimento: **PENDENTE**
+- E-mail informado pelo responsável para atendimento: **endonyparadela2007@gmail.com** — publicado na landing page; **teste de recebimento e prazo de resposta pendentes**.
+- Contato para reclamações, cancelamento e arrependimento: endereço de atendimento informado acima e portal de reembolso Cakto; **procedimento interno pendente de validação**.
 - Prazo operacional de resposta e canal de confirmação de solicitação: **PENDENTE**
 - Política da licença para impressão pessoal/escolar, reprodução e redistribuição: **PENDENTE**
 
 ## Texto-base de compra e entrega
-“Meu Primeiro Inglês Divertido é um material digital em PDF com 40 páginas A4 de atividades infantis de inglês e gabaritos. Não há envio de produto físico. O valor anunciado é R$ 14,90 para pagamento único; confirme preço final, taxas e condições no checkout da Cakto. Após a aprovação do pagamento, siga as instruções enviadas pela plataforma para acessar o material na área de membros.”
+“Meu Primeiro Inglês Divertido é um material digital em PDF com 40 páginas A4 de atividades infantis de inglês e gabaritos. Não há envio de produto físico. O produto custa R$ 14,90; o checkout foi observado com taxa de serviço de R$ 0,99, total à vista de R$ 15,89. Confira preço final, condições e possíveis acréscimos diretamente no checkout da Cakto. Após a aprovação do pagamento, siga as instruções enviadas pela plataforma para acessar o material na área de membros.”
 
 **Publicar o texto acima apenas depois de validar a configuração de entrega e o preço real.**
 
