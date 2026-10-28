@@ -41,3 +41,16 @@ Esta lista separa fatos verificados tecnicamente de pontos que dependem de teste
 - Exclusão da hospedagem anterior: depende de confirmação manual na Vercel; não foi executada pelo conector.
 
 > Não subir PDFs comerciais, senhas, tokens, CPF ou dados dos clientes neste repositório público.
+
+
+## Páginas jurídicas (revisão de 27/10/2026)
+
+- [x] Preparados textos públicos de Política de Privacidade, Termos de Compra e Uso e Política de Reembolso com acesso por links no rodapé e sitemap.
+- [x] E-mail de contato confirmado pelo responsável: `endonyparadela2007@gmail.com`.
+- [ ] Verificar identificação legal do fornecedor, inscrição fiscal aplicável e endereço físico e eletrônico exigidos para transparência no comércio eletrônico, sem presumir CNPJ ou divulgar documentos pessoais sem decisão explícita.
+- [ ] Revisar contrato/licença de uso educacional do PDF com o titular; verificar se uso por professores em sua própria turma é de fato autorizado.
+- [ ] Confirmar prazo e funcionamento real da entrega Cakto Members, preço/taxa final e recebimento de mensagens de suporte.
+- [ ] Se Work instalar Meta Pixel, CAPI, cookies de publicidade ou formulário de leads, atualizar a Política de Privacidade e implantar os mecanismos de conformidade antes de iniciar coleta ou tráfego pago.
+- [ ] Fazer revisão jurídica final antes de considerar os documentos oficiais e completos.
+
+**Captação de leads:** a landing page atual não possui formulário de cadastro ou newsletter; visitantes não compradores não entram automaticamente numa lista de marketing. O checkout da Cakto coleta dados no ambiente externo, sujeito às permissões do painel e regras de privacidade.
