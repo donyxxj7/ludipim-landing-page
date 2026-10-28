@@ -25,7 +25,7 @@ Data local: 27/10/2026. Verificação direta no navegador autenticado. **Resulta
 ## Alterações efetivamente salvas
 
 - Cakto: desativadas as opções de enviar `Purchase` na geração de Pix e de boleto. Após salvar e recarregar, ambas continuaram desmarcadas.
-- Código proposto em PR: exibir taxa de serviço e total no Pix junto às chamadas de compra; avisar sobre juros de parcelamento; esclarecer que o PDF tem 40 páginas no total.
+- Código proposto em PR: esclarecer que o PDF tem 40 páginas no total. Uma atualização concorrente na main já publicou total de R$ 15,89, taxa de R$ 0,99, suporte e link de reembolso; essas mudanças foram preservadas, sem atribuí-las a esta execução.
 - Documentação de rastreamento, entrega e orçamento atualizada com evidências e limitações.
 
 Nenhuma compra, geração de Pix, cobrança, publicação de anúncio ou teste fictício foi executado. Nenhum token foi gerado ou incluído no código.
@@ -34,7 +34,7 @@ Nenhuma compra, geração de Pix, cobrança, publicação de anúncio ou teste f
 
 1. Confirmar o aceite dos Termos Comerciais/Políticas de Páginas e dos Termos das Ferramentas Comerciais da Meta nas etapas preparadas. Vínculo e criação não foram enviados.
 2. Criar o conjunto “Ludipim — Conversões” após confirmação; conectar à conta de anúncios e integrar à Cakto pelo método oficial.
-3. Completar suporte real, identificação do responsável, políticas de compra/privacidade e mecanismo de consentimento antes de habilitar rastreamento publicitário. Não há aprovação jurídica presumida.
+3. Confirmar funcionamento do canal de suporte já publicado e completar identificação do responsável, políticas de compra/privacidade e mecanismo de consentimento antes de habilitar rastreamento publicitário. Não há aprovação jurídica presumida.
 4. Confirmar telefone e e-mail pelos mecanismos oficiais da Meta. Não registrar cartões ou adicionar saldo nesta tarefa.
 5. Executar teste autorizado de pagamento aprovado → acesso → download. Sem teste disponível sem pagamento, manter pendente; não realizar compra real sem autorização específica.
 6. Validar `PageView`, `ViewContent`, `InitiateCheckout` e um `Purchase` real, valor/moeda e deduplicação Pixel/CAPI. Nenhum foi validado nesta auditoria.

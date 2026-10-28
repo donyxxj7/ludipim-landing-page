@@ -6,7 +6,7 @@ Na Cakto, produto correto aberto em **Pixels e rastreamento**: campo Pixel ID va
 
 ## Privacidade: bloqueio de ativação
 
-A landing page publicada ainda informa que suporte e políticas oficiais serão adicionados. Não há política de privacidade aprovada nem mecanismo de consentimento publicitário implementado. Nenhum rastreamento novo foi ativado. Antes da instalação, completar identificação do responsável, canal real de contato, finalidades, compartilhamento com Meta/Cakto, direitos e retenção; implementar recusa e revogação tão acessíveis quanto a aceitação. Base legal e requisitos da operação devem ser revisados antes de habilitar cookies. Referência: Guia orientativo Cookies e proteção de dados pessoais da ANPD.
+Na primeira consulta, a landing page informava que suporte e políticas oficiais seriam adicionados. Durante a auditoria, uma atualização já publicada passou a informar suporte e reembolso, além do total à vista de R$ 15,89. Não há política de privacidade aprovada nem mecanismo de consentimento publicitário implementado. Nenhum rastreamento novo foi ativado. Antes da instalação, completar identificação do responsável, canal real de contato, finalidades, compartilhamento com Meta/Cakto, direitos e retenção; implementar recusa e revogação tão acessíveis quanto a aceitação. Base legal e requisitos da operação devem ser revisados antes de habilitar cookies. Referência: Guia orientativo Cookies e proteção de dados pessoais da ANPD.
 
 ## Eventos previstos, ainda não validados
 
