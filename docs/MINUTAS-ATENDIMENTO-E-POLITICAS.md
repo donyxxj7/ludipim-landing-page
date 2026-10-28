@@ -7,8 +7,8 @@
 - Endereço físico para contato exigido conforme legislação: **PENDENTE**
 - E-mail informado pelo responsável para atendimento: **endonyparadela2007@gmail.com** — publicado na landing page; **teste de recebimento e prazo de resposta pendentes**.
 - Contato para reclamações, cancelamento e arrependimento: endereço de atendimento informado acima e portal de reembolso Cakto; **procedimento interno pendente de validação**.
-- Prazo operacional de resposta e canal de confirmação de solicitação: **PENDENTE**
-- Política da licença para impressão pessoal/escolar, reprodução e redistribuição: **PENDENTE**
+- Prazo operacional de resposta e canal de confirmação de solicitação: **PENDENTE DE TESTE**. Decreto 7.962/2013, art. 4º, exige confirmação imediata da demanda e manifestação em até cinco dias; há procedimento manual preparado em `docs/IDENTIFICACAO-JURIDICA-FORNECEDOR.md`, mas ainda não foi comprovado no atendimento real.
+- Política da licença para impressão pessoal/familiar e uso pedagógico na própria turma: **APROVADA PELO RESPONSÁVEL** em 27/10/2026, conforme Termos de Compra. Revisão jurídica formal ainda não confirmada.
 
 ## Texto-base de compra e entrega
 “Meu Primeiro Inglês Divertido é um material digital em PDF com 40 páginas A4 de atividades infantis de inglês e gabaritos. Não há envio de produto físico. O produto custa R$ 14,90; o checkout foi observado com taxa de serviço de R$ 0,99, total à vista de R$ 15,89. Confira preço final, condições e possíveis acréscimos diretamente no checkout da Cakto. Após a aprovação do pagamento, siga as instruções enviadas pela plataforma para acessar o material na área de membros.”
@@ -24,6 +24,10 @@ Não anunciar “sem reembolso porque o PDF foi baixado”. Não prometer tratam
 “Este site é hospedado na Netlify. Ao selecionar Comprar, o visitante é encaminhado à Cakto, que processa os dados necessários ao checkout, conforme suas próprias informações de privacidade. A landing page, nesta versão, não contém formulário próprio de cadastro. Qualquer instalação futura de Meta Pixel, cookies de marketing, integrações de analytics ou coleta de dados exige atualizar estas informações e implementar mecanismos de consentimento quando aplicável.”
 
 **Revisar pela operação real**: logs técnicos podem existir na hospedagem e na plataforma de checkout, e não se deve declarar ausência absoluta de coleta. Não instalar pixel de marketing sem revisar a base legal e os controles de privacidade.
+
+## Identificação jurídica do fornecedor
+
+A rota `/informacoes-do-fornecedor` foi preparada e ligada ao site, mas a identificação legal só fica completa quando o titular confirma e autoriza a publicação dos dados cadastrais e do endereço físico real. Os valores devem ser fornecidos com cuidado e configurados no ambiente Netlify, não inseridos no GitHub público. Consultar `docs/IDENTIFICACAO-JURIDICA-FORNECEDOR.md`.
 
 ## Referências
 - Decreto 7.962/2013: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm
