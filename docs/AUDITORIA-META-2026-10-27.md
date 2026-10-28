@@ -38,7 +38,7 @@ Nenhuma compra, geração de Pix, cobrança, publicação de anúncio ou teste f
 4. Confirmar telefone e e-mail pelos mecanismos oficiais da Meta. Não registrar cartões ou adicionar saldo nesta tarefa.
 5. Executar teste autorizado de pagamento aprovado → acesso → download. Sem teste disponível sem pagamento, manter pendente; não realizar compra real sem autorização específica.
 6. Validar `PageView`, `ViewContent`, `InitiateCheckout` e um `Purchase` real, valor/moeda e deduplicação Pixel/CAPI. Nenhum foi validado nesta auditoria.
-7. Somente depois, montar rascunho de Vendas: um conjunto para adultos no Brasil e dois anúncios com capa/prévia reais, orçamento vitalício pretendido de R$ 100 por 5 dias. Mínimos e encargos da Meta ainda precisam ser verificados; não aumentar o limite para satisfazê-los.
+7. Somente depois, montar rascunho de Vendas: um conjunto para adultos no Brasil e dois anúncios com capa/prévia reais, até R$ 80 de mídia por 5 dias e R$ 20 de reserva para encargos dentro do teto total de R$ 100. Mínimos e encargos da Meta ainda precisam ser verificados; não aumentar o limite para satisfazê-los.
 
 ## Campanha
 
