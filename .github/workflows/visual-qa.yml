@@ -1,0 +1,44 @@
+name: QA visual Netlify
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "app/**"
+      - "components/**"
+      - "scripts/qa-responsive.cjs"
+      - ".github/workflows/visual-qa.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  visual:
+    name: Chrome 360 390 768 1440
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright temporariamente (sem mudar lockfile)
+        run: |
+          npm install --prefix /tmp/ludipim-qa --no-save playwright@1.56.1
+          /tmp/ludipim-qa/node_modules/.bin/playwright install --with-deps chromium
+      - name: Conferir site publicado, CTAs, menu, FAQ, imagens e overflow
+        env:
+          NODE_PATH: /tmp/ludipim-qa/node_modules
+          SITE_URL: https://ludipim.netlify.app
+        run: node scripts/qa-responsive.cjs
+      - name: Salvar screenshots para inspeção humana
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-ludipim-responsive
+          path: qa-screenshots/
+          if-no-files-found: ignore
+          retention-days: 14

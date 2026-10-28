@@ -24,14 +24,14 @@ pnpm build
 ## Imagens
 
 - `public/images/ludipim-logo.webp`: logo oficial fornecida, otimizada para web.
-- As artes oficiais ficam em `public/images/`: `ludipim-produto-hero.webp`, `ludipim-capa.webp`, `ludipim-cores.webp`, `ludipim-numeros.webp`, `ludipim-animais.webp` e `ludipim-decoracao-banner.webp`. O pacote de arquivos é fornecido separadamente para importar no repositório. Até a inclusão desses WebP, a interface usa fallback honesto em vez de imagens quebradas. As três prévias foram extraídas do material real; não são ilustrações inventadas.
+- As artes oficiais ficam em `public/images/`: `ludipim-produto-hero.webp`, `ludipim-capa.webp`, `ludipim-cores.webp`, `ludipim-numeros.webp`, `ludipim-animais.webp` e `ludipim-decoracao-banner.webp`. Todas as artes estão presentes no repositório e são verificadas automaticamente no CI. Se algum arquivo estiver indisponível em um ambiente futuro, a interface tem fallback identificável. As três prévias foram extraídas do material real; não são ilustrações inventadas.
 - O PDF comercial não deve ser adicionado ao repositório.
 
 ## Configuração
 
 - O endereço do checkout fica centralizado na constante `CHECKOUT_URL` em `app/page.tsx`.
 - Defina `NEXT_PUBLIC_SITE_URL` com o domínio oficial antes da publicação para ativar a URL base do Open Graph e preencher o sitemap/robots com o endereço correto.
-- Pixel da Meta, analítica, e-mail de suporte e políticas oficiais não foram configurados por falta dos identificadores e dados reais.
+- Meta Pixel, validação de entrega ao comprador, identificação legal do vendedor e canal de suporte permanecem pendentes. Veja os procedimentos e minutas em `docs/`; não assumir que estão aprovados.
 
 ## Estrutura
 
@@ -46,3 +46,13 @@ components/
   sitemap.ts      sitemap básico
 public/images/    logo e futuras artes oficiais
 ```
+
+## Produção e pré-lançamento
+
+- Hospedagem comercial atual: https://ludipim.netlify.app (Netlify, com deploy automático da `main`).
+- Configuração: `netlify.toml` e `NEXT_PUBLIC_SITE_URL` do ambiente de produção.
+- Checklist: `docs/CHECKLIST-LANCAMENTO.md` e Issue #3.
+- QA em navegador: workflow `QA visual Netlify` (360, 390, 768 e 1440 px, screenshots no GitHub Actions).
+- Teste de entrega: `docs/VALIDACAO-CAKTO-PENDENTE.md`.
+- Meta Ads: `docs/PIXEL-META-CAKTO.md` e `docs/PLANO-TESTE-ADS-R100.md`.
+- Minutas de políticas: `docs/MINUTAS-ATENDIMENTO-E-POLITICAS.md`. Não são termos publicados sem aprovação.
