@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ export default function PoliticaDeReembolso() {
       </section>
       <section>
         <h2>5. Regras da plataforma e legislação</h2>
-        <p>A Cakto disponibiliza um <a href="https://www.cakto.com.br/reembolso" target="_blank" rel="noopener noreferrer">guia de solicitação de reembolso</a>. Essas orientações operacionais não substituem direitos assegurados pela legislação brasileira. Consulte também o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank" rel="noopener noreferrer">Código de Defesa do Consumidor</a>.</p>
+        <p>A Cakto disponibiliza um <a href="https://www.cakto.com.br/reembolso" target="_blank" rel="noopener noreferrer">guia de solicitação de reembolso</a>. Essas orientações operacionais não substituem direitos assegurados pela legislação brasileira. Consulte a <Link href="/informacoes-do-fornecedor">Identificação do Fornecedor</Link> e também o <a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank" rel="noopener noreferrer">Código de Defesa do Consumidor</a>.</p>
       </section>
     </LegalPage>
   );
