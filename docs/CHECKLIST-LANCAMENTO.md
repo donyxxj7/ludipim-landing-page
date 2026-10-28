@@ -48,7 +48,7 @@ Esta lista separa fatos verificados tecnicamente de pontos que dependem de teste
 - [x] Preparados textos públicos de Política de Privacidade, Termos de Compra e Uso e Política de Reembolso com acesso por links no rodapé e sitemap.
 - [x] E-mail de contato confirmado pelo responsável: `endonyparadela2007@gmail.com`.
 - [ ] Verificar identificação legal do fornecedor, inscrição fiscal aplicável e endereço físico e eletrônico exigidos para transparência no comércio eletrônico, sem presumir CNPJ ou divulgar documentos pessoais sem decisão explícita.
-- [ ] Revisar contrato/licença de uso educacional do PDF com o titular; verificar se uso por professores em sua própria turma é de fato autorizado.
+- [x] **Licença de uso definida e aprovada pelo responsável da Ludipim** (confirmação de 27/10/2026). Os Termos de Compra atualmente permitem uso pessoal/familiar e impressão para atividades pedagógicas da própria turma do comprador; proíbem revenda e redistribuição. **Essa confirmação não substitui revisão jurídica das políticas.**
 - [ ] Confirmar prazo e funcionamento real da entrega Cakto Members, preço/taxa final e recebimento de mensagens de suporte.
 - [ ] Se Work instalar Meta Pixel, CAPI, cookies de publicidade ou formulário de leads, atualizar a Política de Privacidade e implantar os mecanismos de conformidade antes de iniciar coleta ou tráfego pago.
 - [ ] Fazer revisão jurídica final antes de considerar os documentos oficiais e completos.
