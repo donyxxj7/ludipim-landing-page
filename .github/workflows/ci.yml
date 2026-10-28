@@ -46,5 +46,8 @@ jobs:
       - name: Confere imagens oficiais e link do checkout
         run: node scripts/verify-site-assets.mjs
 
+      - name: Testes de consentimento e eventos
+        run: pnpm test:consent
+
       - name: Build
         run: pnpm build

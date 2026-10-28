@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { MarketingConsent } from "@/components/MarketingConsent";
 import { ProductShowcase, ProductPreviewGallery } from "@/components/ProductMedia";
 import { useState } from "react";
 import { ArrowDown, ArrowRight, BookOpen, Check, ChevronDown, CircleHelp, FileDown, GraduationCap, Heart, Lightbulb, Menu, Printer, Sparkles, X } from "lucide-react";
@@ -37,6 +38,7 @@ export default function Home() {
   const closeMenu = () => setMenuOpen(false);
 
   return <>
+    <MarketingConsent/>
     <header className="site-header"><div className="header-inner">
       <a className="brand" href="#inicio" aria-label="Ludipim — início"><Image src="/images/ludipim-logo.webp" alt="Ludipim — Aprender pode ser uma aventura!" width={1200} height={400} priority /></a>
       <button className="menu-toggle" aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X/> : <Menu/>}</button>

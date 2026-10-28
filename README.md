@@ -56,3 +56,7 @@ public/images/    logo e futuras artes oficiais
 - Teste de entrega: `docs/VALIDACAO-CAKTO-PENDENTE.md`.
 - Meta Ads: `docs/PIXEL-META-CAKTO.md` e `docs/PLANO-TESTE-ADS-R100.md`.
 - Minutas de políticas: `docs/MINUTAS-ATENDIMENTO-E-POLITICAS.md`. Não são termos publicados sem aprovação.
+
+## Meta e consentimento
+
+O conjunto confirmado é `1112474941151817`. A integração preparada está **desativada por padrão** e depende de duas condições de ativação e do consentimento do visitante. Consulte `docs/INTEGRACAO-META-CONSENTIMENTO.md` antes de habilitar qualquer variável de rastreamento. Testes sem envio de eventos: `pnpm test:consent`.
