@@ -56,3 +56,13 @@ Nenhuma campanha criada nesta execução: a condição de mensuração/entrega v
 - ANPD: https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_cookies_e_protecao_de_dados_pessoais
 
 **Nenhum dinheiro gasto nesta execução.**
+
+
+## Retomada após criação pelo titular
+
+- Conjunto Ludipim — Conversões **1112474941151817** confirmado, propriedade de Ludipim e associado à Ludipim Ads. Nenhum evento recebido.
+- Página Ludipim agora aparece como propriedade do portfólio; os formulários de aceite anteriores não estão mais pendentes.
+- Páginas de privacidade, compra e reembolso já foram publicadas por outra atualização; identificação do fornecedor e consentimento do checkout seguem pendentes.
+- Código de consentimento preparado com ambas as condições de ativação desligadas. Detalhes em `INTEGRACAO-META-CONSENTIMENTO.md`.
+- Coleta automática de detalhes adicionais de páginas/produtos desativada; estado conferido na Meta.
+- Nenhum ID salvo na Cakto, token CAPI gerado, evento fictício ou pagamento nesta retomada.

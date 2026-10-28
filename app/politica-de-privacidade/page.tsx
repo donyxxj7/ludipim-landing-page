@@ -36,7 +36,9 @@ export default function PoliticaDePrivacidade() {
       <section>
         <h2>5. Cookies e ferramentas de medição</h2>
         <p>Ferramentas técnicas necessárias ao funcionamento da hospedagem podem utilizar registros ou tecnologias de armazenamento. Qualquer implementação ou mudança em Pixel da Meta, API de Conversões, cookies de publicidade ou ferramentas de analytics deverá ser refletida nesta política e acompanhada dos controles legais aplicáveis, inclusive consentimento quando necessário.</p>
-        <p>Esta política não declara que a Cakto, a Netlify ou outros serviços de terceiros estejam livres de cookies.</p>
+        <p>A integração preparada para o Pixel da Meta permanece desativada nesta versão. Se for habilitada após a revisão dos requisitos de privacidade, só carregará a ferramenta após sua aceitação de publicidade, com opção de recusar sem impedir a compra e de revogar em “Preferências de cookies”. A escolha será guardada neste navegador por até 180 dias, sem nome ou e-mail nesse registro.</p>
+        <p>Quando autorizado e habilitado, o Pixel pode enviar à Meta informações técnicas de conexão, navegador, endereço da página visitada, identificadores de cookies e eventos de visualização da página e do produto, para mensurar publicidade. Consulte a <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Política de Privacidade da Meta</a>. Não coletamos diretamente dados de crianças nesta página.</p>
+        <p>A preferência desta landing page não é automaticamente transferida à Cakto. O rastreamento no checkout exige revisão independente dos controles disponíveis naquela plataforma. Esta política não declara que a Cakto, a Netlify ou outros serviços de terceiros estejam livres de cookies.</p>
       </section>
       <section>
         <h2>6. Conservação e segurança</h2>

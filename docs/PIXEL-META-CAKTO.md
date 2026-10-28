@@ -1,6 +1,8 @@
 # Configuração do Meta Pixel no checkout Cakto — pendente
 
-Status em 27/10/2026: **nenhum Pixel ID, token CAPI ou evento real de compra foi confirmado.** Verificação direta no navegador: nenhum conjunto de dados adicionado ao portfólio Ludipim e Gerenciador de Eventos sem fonte conectada. Formulário “Ludipim — Conversões” preparado, mas não enviado porque exige aceite dos Termos das Ferramentas Comerciais da Meta. Conexão automática de todos os conjuntos à CAPI desmarcada no formulário.
+Atualização em 27/10/2026, após criação pelo titular: conjunto **Ludipim — Conversões**, ID **1112474941151817**, confirmado no portfólio Ludipim e já associado à conta Ludipim Ads. A Página também está vinculada ao portfólio. Nenhum evento recebido até a consulta. **Token CAPI e compra real continuam não validados.**
+
+Integração de navegador preparada com consentimento, mas **desativada em produção por padrão**. Consulte `INTEGRACAO-META-CONSENTIMENTO.md` para implementação, testes e bloqueios de ativação.
 
 Na Cakto, produto correto aberto em **Pixels e rastreamento**: campo Pixel ID vazio e envio pelo servidor não ativado. As opções `Purchase` para Pix e boleto gerados estavam marcadas. Foram **desmarcadas e salvas**; uma recarga confirmou que ambas permaneceram desligadas. Isso corrige a regra de contagem, mas não comprova recebimento de eventos.
 
@@ -35,7 +37,7 @@ Na primeira consulta, a landing page informava que suporte e políticas oficiais
 - Não lançar uma campanha com otimização para compras sem poder medir um pagamento aprovado.
 
 ## Critério de aprovação
-- [ ] Pixel ID confirmado na Meta
+- [x] Pixel ID confirmado na Meta
 - [ ] Pixel vinculado ao produto correto no painel Cakto
 - [ ] `InitiateCheckout` confirmado no checkout
 - [ ] `Purchase` de transação realmente aprovada confirmado (e não duplicado)
