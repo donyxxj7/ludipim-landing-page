@@ -34,6 +34,7 @@ export function LegalPage({ title, intro, children }: LegalPageProps) {
         <Link href="/politica-de-privacidade">Privacidade</Link>
         <Link href="/termos-de-compra">Termos de compra</Link>
         <Link href="/politica-de-reembolso">Reembolso</Link>
+        <Link href="/informacoes-do-fornecedor">Identificação do fornecedor</Link>
       </footer>
     </div>
   );
