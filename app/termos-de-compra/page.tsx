@@ -13,7 +13,7 @@ export default function TermosDeCompra() {
       <section>
         <h2>1. Produto e fornecedor</h2>
         <p>A <strong>Ludipim</strong> oferece o material digital <strong>Meu Primeiro Inglês Divertido</strong>, um PDF com 40 páginas de atividades introdutórias de inglês, temas como cores, números e animais, e gabaritos. Não há envio de produto físico. O conteúdo é um apoio educativo e não substitui o ensino formal.</p>
-        <p>Contato do vendedor para dúvidas: <a href="mailto:endonyparadela2007@gmail.com">endonyparadela2007@gmail.com</a>. A identificação legal completa e o endereço físico de atendimento ainda estão em processo de confirmação cadastral e devem ser complementados antes de considerar estes termos definitivamente regularizados.</p>
+        <p>Contato do vendedor para dúvidas: <a href="mailto:endonyparadela2007@gmail.com">endonyparadela2007@gmail.com</a>. Consulte os dados cadastrais e o estado de validação em <Link href="/informacoes-do-fornecedor">Identificação do Fornecedor</Link>. A marca não substitui o nome legal do responsável pela oferta.</p>
       </section>
       <section>
         <h2>2. Preço e condições</h2>

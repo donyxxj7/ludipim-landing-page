@@ -1,0 +1,62 @@
+# Ludipim — dossiê de identificação jurídica do fornecedor
+
+Data: 27/10/2026. **Preparação técnica concluída; identificação pública ainda INCOMPLETA.** Esta documentação não constitui parecer jurídico nem substitui validação cadastral/tributária.
+
+## Base legal conferida
+
+Decreto 7.962/2013, art. 2º: as ofertas no comércio eletrônico devem disponibilizar identificação do fornecedor (nome empresarial e número de inscrição em CPF/CNPJ, quando houver), **endereço físico e eletrônico**, meios de localização/contato, características do produto, custos acessórios discriminados, condições integrais e restrições da oferta. Art. 4º: serviço eletrônico adequado, confirmação imediata do recebimento de demandas e manifestação ao consumidor em até cinco dias. Art. 5º: exercício do arrependimento e confirmação de recebimento.
+
+Fonte: https://legis.senado.leg.br/norma/413161/publicacao/15762397
+
+ANPD: uma operação que realmente se enquadre como agente de pequeno porte pode ter dispensa de encarregado, **mas precisa manter um canal de comunicação com o titular** (Resolução CD/ANPD nº 2/2022, art. 11). O enquadramento não foi formalmente verificado. Fonte: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022
+
+## Dados já confirmados para a Ludipim
+
+- Nome fantasia/marca: **Ludipim**.
+- Oferta: **Meu Primeiro Inglês Divertido**, material digital PDF de 40 páginas, entregue por **Cakto Members V3** após pagamento aprovado.
+- E-mail de suporte informado pelo responsável: **endonyparadela2007@gmail.com**. Publicado, **mas recebimento de solicitações e procedimento de resposta ainda não foram testados**.
+- Pagamento: checkout Cakto (última auditoria: **produto R$ 14,90 + taxa R$ 0,99 = R$ 15,89 à vista**). Confirmar se mudou.
+- Licença para uso pessoal/familiar e impressão para atividade pedagógica da própria turma: aprovada pelo titular e publicada nos termos.
+- Três páginas jurídicas informativas no site, mas não considerar regularização concluída até preencher os dados reais.
+
+## Campos indispensáveis ainda não confirmados
+
+1. **Modalidade de venda:** pessoa física (CPF) ou pessoa jurídica/MEI (CNPJ). Não presumir enquadramento e verificar obrigações cadastrais, fiscais e tributárias com profissional habilitado.
+2. **Nome civil completo do vendedor**, se pessoa física; **razão social**, se pessoa jurídica. Deve corresponder a quem figura como fornecedor na Cakto.
+3. **Inscrição CPF/CNPJ aplicável**, conferida com o titular. CPF e endereço residencial são dados pessoais; definir previamente o que deve ser exposto para atender à lei. **NÃO registrar os valores neste repositório público**.
+4. **Endereço físico verdadeiro e utilizável para localização e contato**, com autorização para publicação. Se usar serviço de endereço comercial, conferir sua validade para essa finalidade; não inventar endereço ou assumir que uma caixa postal isolada é suficiente.
+5. Verificar se o mesmo responsável/identificação aparece no checkout, recibo e atendimento Cakto, inclusive de maneira compatível com os dados divulgados no site.
+6. Testar contato de suporte e estabelecer procedimento para **confirmar imediatamente o recebimento** de reclamações/solicitações e **responder em até cinco dias**, conforme Decreto 7.962/2013; até o teste, não afirmar que já existe sistema de protocolo automático.
+7. Revisão jurídica/tributária final com dados reais e confirmação de que as páginas correspondem à operação efetiva.
+
+## Preparação técnica já realizada
+
+A rota pública `/informacoes-do-fornecedor` está ligada ao rodapé e às políticas. Ela exibe dados cadastrais **somente quando todos os campos de publicação abaixo são preenchidos**. Enquanto faltarem, mostra um aviso verdadeiro de pendência. Isso **não substitui a obrigação de identificar o fornecedor no site**.
+
+| Variável de ambiente Netlify — servidor | Conteúdo a informar DEPOIS de validação e autorização |
+| --- | --- |
+| `LUDIPIM_SUPPLIER_LEGAL_NAME` | Nome civil ou razão social confirmada |
+| `LUDIPIM_SUPPLIER_TAX_ID_TYPE` | `CPF` ou `CNPJ` |
+| `LUDIPIM_SUPPLIER_TAX_ID` | Número correspondente, para exibição pública |
+| `LUDIPIM_SUPPLIER_CONTACT_ADDRESS` | Endereço físico completo e autorizado para exibição |
+
+**Segurança e publicação:**
+- **Não inserir valores reais em código, issues, PRs, README, comentários ou logs do GitHub público.**
+- Antes de adicionar variáveis, obter **aprovação explícita do responsável para exibir esses dados no site público**, pois o uso de variáveis de servidor evita o histórico Git, mas não torna a informação privada na página final.
+- Configurar as variáveis na **Netlify do projeto Ludipim** com escopo apropriado e fazer **novo build/deploy de produção** para que a rota estática exiba os valores. Verificar o HTML público; não publicar dados parciais ou incorretos.
+- A página de identificação só exibe o conjunto completo. Se qualquer variável estiver vazia, a identificação fica como **pendente**, e anúncios pagos continuam bloqueados.
+- Revisar aviso de privacidade, Termos e a página do fornecedor para consistência; repetir conferência com o checkout da Cakto.
+- Não ativar Meta Pixel, CAPI nem anúncios por causa desta preparação.
+
+## Atendimentos da Cakto Members e do suporte
+
+A entrega configurada é **Cakto Members V3**; não há obrigação técnica de ativar entrega por WhatsApp ou outro método para cumprir o teste. Confirmações e comunicações operacionais da plataforma devem ser avaliadas separadamente.
+
+**Roteiro manual de atendimento, até haver uma solução de protocolo confirmada:**
+1. Verificar a caixa de suporte regularmente.
+2. Ao receber pedido, **confirmar imediatamente** a recepção pelo mesmo meio, identificando o contato e a demanda sem divulgar dados de terceiros.
+3. Responder ao consumidor em até cinco dias, encaminhando resolução ou providências adotadas. Registrar minimamente a data e situação, de forma segura e sem expor dados em GitHub.
+4. Para arrependimento, confirmar recebimento da manifestação e orientar o uso do portal de reembolso, sem limitar os direitos legais.
+5. Para solicitações de dados pessoais, dar encaminhamento conforme LGPD e não solicitar documentos sem necessidade e meio seguro.
+
+**Referências:** CDC art. 49; Decreto 7.962/2013 arts. 2º, 4º e 5º; LGPD; Resolução ANPD nº 2/2022.

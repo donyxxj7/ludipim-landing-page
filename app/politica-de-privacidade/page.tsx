@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export default function PoliticaDePrivacidade() {
       <section>
         <h2>1. Quem oferece o serviço</h2>
         <p>A Ludipim é a marca responsável pela apresentação do material educativo <strong>Meu Primeiro Inglês Divertido</strong>. Para solicitações sobre dados pessoais e atendimento, utilize <a href="mailto:endonyparadela2007@gmail.com">endonyparadela2007@gmail.com</a>.</p>
-        <p>A identificação legal completa do fornecedor ainda precisa ser complementada neste aviso, após validação dos dados cadastrais. Não insira dados bancários ou documentos sensíveis em mensagens comuns de e-mail.</p>
+        <p>Para consultar a identificação civil ou empresarial e o endereço de contato do responsável, acesse <Link href="/informacoes-do-fornecedor">Identificação do Fornecedor</Link>. O preenchimento depende da confirmação dos dados pelo titular. Não insira dados bancários ou documentos sensíveis em mensagens comuns de e-mail.</p>
       </section>
       <section>
         <h2>2. Quais dados podem ser tratados</h2>
