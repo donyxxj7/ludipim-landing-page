@@ -6,10 +6,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   title: "Meu Primeiro Inglês Divertido | Ludipim",
-  description: "40 páginas de atividades ilustradas para apresentar cores, números, animais e as primeiras palavras em inglês às crianças de 6 a 9 anos.",
+  description: "PDF de 40 páginas com atividades ilustradas para apresentar cores, números, animais e as primeiras palavras em inglês às crianças de 6 a 9 anos.",
   openGraph: {
     title: "Meu Primeiro Inglês Divertido | Ludipim",
-    description: "Aprender pode ser uma aventura! Conheça o material digital com 40 páginas de atividades para imprimir.",
+    description: "Aprender pode ser uma aventura! Conheça o PDF de 40 páginas, com atividades para imprimir e materiais de apoio.",
     type: "website",
     locale: "pt_BR",
     siteName: "Ludipim",

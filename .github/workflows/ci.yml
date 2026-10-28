@@ -49,5 +49,8 @@ jobs:
       - name: Testes de consentimento e eventos
         run: pnpm test:consent
 
+      - name: Proteção da identidade do fornecedor
+        run: node --test tests/supplier-identity.test.mjs
+
       - name: Build
         run: pnpm build

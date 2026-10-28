@@ -1,6 +1,8 @@
 # Ludipim — validação Cakto (não concluída)
 
-O painel de produtor foi consultado em 27/10/2026. O produto está ativo, com módulo e aula publicados. **O fluxo de compra aprovada → acesso do comprador ainda não foi executado e não está aprovado.**
+O painel de produtor foi reconferido pelo Edge em 28/10/2026. O produto está ativo, com módulo e aula publicados e um anexo de 19,9 MB. **O fluxo de compra aprovada → acesso do comprador ainda não foi executado e não está aprovado.**
+
+**Procedimento vigente:** seguir [ROTEIRO-VALIDACAO-PRIMEIRA-VENDA.md](ROTEIRO-VALIDACAO-PRIMEIRA-VENDA.md). Antes de autocompra, obter o método de teste permitido pela Cakto, considerando a cláusula 11.1.5 dos termos atuais. Nenhum reembolso é parte automática do teste.
 
 ## Pré-condições
 - Produto correto: **Meu Primeiro Inglês Divertido**, 40 páginas A4, preço anunciado R$ 14,90.
@@ -11,12 +13,12 @@ O painel de produtor foi consultado em 27/10/2026. O produto está ativo, com m�
 
 ## Aceite: compra → acesso
 1. Abrir a landing page e clicar em comprar. Conferir endereço do checkout e oferta real, com taxas e preço final.
-2. Realizar transação autorizada (preferencialmente teste disponível na plataforma); **não simular compra com pedido pendente**.
+2. Somente o titular realiza pagamento real, com autorização específica e procedimento permitido pela Cakto; **não presumir que autocompra é permitida e não simular compra com pedido pendente**.
 3. Confirmar que o pagamento foi aprovado e o produto liberado ao **usuário correto**.
 4. Confirmar recebimento do e-mail de acesso do comprador e login na área de membros.
 5. Baixar o PDF final, verificar 40 páginas A4 e gabaritos. Registrar evidências **sem expor dados pessoais**.
 6. Validar suporte, solicitação de arrependimento e fluxo de reembolso conforme legislação e regras da plataforma.
-7. Confirmar no Gerenciador de Eventos da Meta que `Purchase` ocorre **somente no pagamento aprovado**, com o valor/moeda corretos. Um clique no botão nunca é uma compra.
+7. Apenas depois de validar privacidade e consentimento na Cakto, confirmar no Gerenciador de Eventos da Meta que `Purchase` ocorre **somente no pagamento aprovado**, com o valor/moeda corretos. Um clique no botão nunca é uma compra. Até lá, manter o Pixel desligado e registrar que o teste de entrega não valida mensuração.
 
 ## Resultado em 27/10/2026
 - [x] Link de checkout presente no código e no HTML publicado.
