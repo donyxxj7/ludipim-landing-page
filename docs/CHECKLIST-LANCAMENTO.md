@@ -16,8 +16,8 @@ Esta lista separa fatos verificados tecnicamente de pontos que dependem de teste
 ## Bloqueios antes dos anúncios
 
 - [ ] **Entrega**: verificar no painel Cakto que o produto está apto à venda, que o módulo e a aula estão publicados para compradores e que o PDF correto é entregue após confirmação do pagamento. Realizar compra de teste aprovada pelo responsável, com procedimento de estorno/reembolso quando aplicável, e registrar evidências sem compartilhar dados pessoais.
-- [ ] **Preço real**: abrir o checkout e confirmar que o preço final anunciado de R$ 14,90 e as condições de pagamento coincidem; conferir taxas, parcelamento e eventuais acréscimos exibidos ao comprador.
-- [ ] **Atendimento e identificação**: definir e publicar canal de suporte que funcione; identificar o fornecedor conforme legislação aplicável, usando dados reais e decisão explícita sobre privacidade. Não publicar CPF/endereço particular sem avaliar a necessidade e a exposição.
+- [ ] **Preço real**: Work observou R$ 14,90 do produto + R$ 0,99 taxa = R$ 15,89 à vista; landing page atualizada no PR #7. **Pendente** reconfirmar o checkout depois de qualquer mudança de taxa, condições de pagamento e parcelamento.
+- [ ] **Atendimento e identificação**: contato de suporte informado pelo responsável e publicado na landing page (endonyparadela2007@gmail.com). **Pendente** confirmar recebimento de e-mails, informar identificação legal e demais dados de contato exigidos; não publicar CPF/endereço particular sem avaliar necessidade e exposição.
 - [ ] **Reembolso, privacidade e termos**: preparar informação clara sobre conteúdo digital, entrega, licenças, privacidade e exercício do direito de arrependimento; obter revisão adequada. Não inventar garantia, prazo ou condição.
 - [x] **Hospedagem comercial**: migração para Netlify Free realizada; acesso público e HTTPS confirmados nos registros. Monitorar limites de consumo da hospedagem.
 - [ ] **Análises**: configurar a conta de anúncios e uma mensuração confiável de compras (integração Meta Pixel/CAPI no destino adequado) e validar ao menos um evento de compra de teste. Não instalar IDs de pixel sem permissão/aviso adequado.

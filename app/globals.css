@@ -49,3 +49,8 @@
 @media(max-width:900px){.ludipim-product-gallery{gap:8px}.ludipim-gallery-card{padding:8px;border-radius:14px}.ludipim-gallery-card figcaption strong{font-size:12px}.ludipim-gallery-card figcaption small{font-size:9px}}
 @media(max-width:680px){.hero-visual{height:auto;min-height:290px;margin:10px -7px 0}.ludipim-product-showcase{width:100%;aspect-ratio:1.28}.ludipim-product-showcase.is-compact{max-height:310px}.visual-caption{margin:0 auto 4px;max-width:320px;line-height:1.4}.ludipim-gallery-wrap{width:100%}.ludipim-product-gallery{display:flex;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;gap:14px;padding:18px 18% 25px 4px;scrollbar-width:thin}.ludipim-gallery-card,.ludipim-gallery-card:nth-child(1),.ludipim-gallery-card:nth-child(2),.ludipim-gallery-card:nth-child(3){flex:0 0 65%;max-width:255px;transform:none;scroll-snap-align:center;padding:9px;border-radius:16px}.ludipim-gallery-card figcaption strong{font-size:13px}.ludipim-gallery-card figcaption small{font-size:10px}.ludipim-gallery-hint{font-size:10px}.offer-art{height:auto;min-height:250px;overflow:visible}.offer-section{gap:14px}.ludipim-product-showcase.is-compact{max-height:none;width:100%}.ludipim-hero-fallback{min-height:270px}.ludipim-fallback-book{min-height:240px}.ludipim-fallback-book strong{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.ludipim-gallery-card{transition:none}}
+
+/* Contato de atendimento acessível no rodapé. */
+.support-email{color:#245b9b;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
+.support-email:hover{color:#0b2c7d}
+.support-email:focus-visible{outline:3px solid #80b4ff;outline-offset:3px}
