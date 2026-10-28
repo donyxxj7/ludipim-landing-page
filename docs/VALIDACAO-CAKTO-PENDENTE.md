@@ -1,6 +1,6 @@
 # Ludipim — validação Cakto (não concluída)
 
-Este procedimento não foi executado no painel de produtor. Sem acesso autorizado ao produto e a um pedido realmente aprovado, **nenhuma etapa de liberação de acesso pode ser marcada como aprovada**.
+O painel de produtor foi consultado em 27/10/2026. O produto está ativo, com módulo e aula publicados. **O fluxo de compra aprovada → acesso do comprador ainda não foi executado e não está aprovado.**
 
 ## Pré-condições
 - Produto correto: **Meu Primeiro Inglês Divertido**, 40 páginas A4, preço anunciado R$ 14,90.
@@ -21,8 +21,10 @@ Este procedimento não foi executado no painel de produtor. Sem acesso autorizad
 ## Resultado em 27/10/2026
 - [x] Link de checkout presente no código e no HTML publicado.
 - [x] Publicação da landing page Netlify/Next.js confirmada.
-- [ ] Preço e checkout carregados no navegador de comprador.
-- [ ] Canal de entrega e módulo/aula publicados no painel Cakto.
+- [x] Checkout aberto: produto correto, R$ 14,90 + R$ 0,99 de taxa; total no Pix R$ 15,89. Cartão exibiu 2x de R$ 8,62.
+- [x] Área de membros associada ao produto; módulo publicado em 26/10/2026 e aula “Baixe seu PDF — 40 páginas” publicada, com liberação imediata e 1 material extra de 19,9 MB.
+- [x] PDF fornecido diretamente pelo titular inspecionado: 40 páginas A4, 19.867.565 bytes, sem criptografia. Capa, atividades, guia, três páginas de gabaritos e certificado. Esse arquivo não foi obtido por compra; não há prova de identidade binária com o anexo da Cakto.
+- [ ] Download do anexo no painel concluído: a tentativa pelo navegador não retornou arquivo para inspeção.
 - [ ] Transação autorizada concluída.
 - [ ] PDF entregue e baixado por comprador.
 - [ ] Reembolso e atendimento confirmados.

@@ -1,6 +1,22 @@
 # Configuração do Meta Pixel no checkout Cakto — pendente
 
-Status em 27/10/2026: **nenhum Pixel ID, token CAPI ou evento real de compra foi confirmado.** O ChatGPT Ads Manager consta como instalado, mas suas ações da conta de anúncios não foram expostas nesta conversa; não inferir identificador ou autorização financeira.
+Status em 27/10/2026: **nenhum Pixel ID, token CAPI ou evento real de compra foi confirmado.** Verificação direta no navegador: nenhum conjunto de dados adicionado ao portfólio Ludipim e Gerenciador de Eventos sem fonte conectada. Formulário “Ludipim — Conversões” preparado, mas não enviado porque exige aceite dos Termos das Ferramentas Comerciais da Meta. Conexão automática de todos os conjuntos à CAPI desmarcada no formulário.
+
+Na Cakto, produto correto aberto em **Pixels e rastreamento**: campo Pixel ID vazio e envio pelo servidor não ativado. As opções `Purchase` para Pix e boleto gerados estavam marcadas. Foram **desmarcadas e salvas**; uma recarga confirmou que ambas permaneceram desligadas. Isso corrige a regra de contagem, mas não comprova recebimento de eventos.
+
+## Privacidade: bloqueio de ativação
+
+Na primeira consulta, a landing page informava que suporte e políticas oficiais seriam adicionados. Durante a auditoria, uma atualização já publicada passou a informar suporte e reembolso, além do total à vista de R$ 15,89. Não há política de privacidade aprovada nem mecanismo de consentimento publicitário implementado. Nenhum rastreamento novo foi ativado. Antes da instalação, completar identificação do responsável, canal real de contato, finalidades, compartilhamento com Meta/Cakto, direitos e retenção; implementar recusa e revogação tão acessíveis quanto a aceitação. Base legal e requisitos da operação devem ser revisados antes de habilitar cookies. Referência: Guia orientativo Cookies e proteção de dados pessoais da ANPD.
+
+## Eventos previstos, ainda não validados
+
+- `PageView`: carregamento da landing page após consentimento aplicável.
+- `ViewContent`: visualização do produto após consentimento aplicável.
+- `InitiateCheckout`: abertura efetiva do checkout pela integração oficial Cakto; evitar emissão simultânea do mesmo início no site e no checkout.
+- `Purchase`: somente pagamento aprovado na Cakto. Não emitir na landing page.
+- Se houver Pixel e CAPI para a mesma compra, confirmar mesmo `event_name` e `event_id`, conferir deduplicação no Gerenciador e comparar com um pedido aprovado. A alegação de deduplicação exibida pela Cakto não substitui um teste real.
+
+**Nenhum dos quatro eventos foi marcado como aprovado; não houve compra, geração de Pix ou teste fictício.**
 
 ## Procedimento oficial para o produto Ludipim
 
