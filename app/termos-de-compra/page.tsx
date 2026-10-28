@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
@@ -35,11 +36,11 @@ export default function TermosDeCompra() {
       </section>
       <section>
         <h2>6. Arrependimento e reembolso</h2>
-        <p>Compras realizadas pela internet estão sujeitas ao direito de arrependimento previsto no artigo 49 do Código de Defesa do Consumidor. Consulte a <a href="/politica-de-reembolso">Política de Reembolso</a> para conhecer os canais de solicitação e as condições legais. A compra de conteúdo digital não elimina automaticamente os direitos do consumidor.</p>
+        <p>Compras realizadas pela internet estão sujeitas ao direito de arrependimento previsto no artigo 49 do Código de Defesa do Consumidor. Consulte a <Link href="/politica-de-reembolso">Política de Reembolso</Link> para conhecer os canais de solicitação e as condições legais. A compra de conteúdo digital não elimina automaticamente os direitos do consumidor.</p>
       </section>
       <section>
         <h2>7. Privacidade e atendimento</h2>
-        <p>Veja como as informações são tratadas na <a href="/politica-de-privacidade">Política de Privacidade</a>. Para problemas de pagamento, acesso, licença ou solicitações relacionadas ao produto, entre em contato com <a href="mailto:endonyparadela2007@gmail.com">endonyparadela2007@gmail.com</a>.</p>
+        <p>Veja como as informações são tratadas na <Link href="/politica-de-privacidade">Política de Privacidade</Link>. Para problemas de pagamento, acesso, licença ou solicitações relacionadas ao produto, entre em contato com <a href="mailto:endonyparadela2007@gmail.com">endonyparadela2007@gmail.com</a>.</p>
       </section>
       <section>
         <h2>8. Referência legal</h2>
