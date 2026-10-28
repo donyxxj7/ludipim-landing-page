@@ -1,32 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
+import { getPublicSupplierIdentity } from "@/lib/supplier-identity";
 
 export const metadata: Metadata = {
   title: "Identificação do Fornecedor | Ludipim",
   description: "Informações de identificação e canais de contato do fornecedor dos materiais educativos Ludipim.",
 };
 
-function getPublicIdentity() {
-  // These values are intended to become PUBLIC on the final website after explicit owner approval.
-  // Keep the actual data out of the public Git repository and out of NEXT_PUBLIC_* settings.
-  const legalName = process.env.LUDIPIM_SUPPLIER_LEGAL_NAME?.trim();
-  const taxIdType = process.env.LUDIPIM_SUPPLIER_TAX_ID_TYPE?.trim();
-  const taxId = process.env.LUDIPIM_SUPPLIER_TAX_ID?.trim();
-  const contactAddress = process.env.LUDIPIM_SUPPLIER_CONTACT_ADDRESS?.trim();
-
-  if (
-    !legalName ||
-    !taxId ||
-    !contactAddress ||
-    (taxIdType !== "CPF" && taxIdType !== "CNPJ")
-  ) return null;
-
-  return { legalName, taxIdType, taxId, contactAddress };
-}
-
 export default function InformacoesDoFornecedor() {
-  const supplier = getPublicIdentity();
+  const supplier = getPublicSupplierIdentity(process.env);
 
   return (
     <LegalPage title="Identificação do Fornecedor" intro="Consulte a identificação do responsável pela oferta e os canais para atendimento relacionados ao produto Meu Primeiro Inglês Divertido.">

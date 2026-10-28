@@ -8,6 +8,7 @@ on:
       - "app/**"
       - "components/**"
       - "scripts/qa-responsive.cjs"
+      - "lib/**"
       - ".github/workflows/visual-qa.yml"
 
 permissions:
@@ -25,14 +26,35 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.28.0
+      - name: Instalar dependências da aplicação
+        run: pnpm install --frozen-lockfile
+      - name: Compilar a versão do PR com coleta e publicação de identidade desligadas
+        env:
+          NEXT_PUBLIC_SITE_URL: https://ludipim.netlify.app
+          NEXT_PUBLIC_META_TRACKING_ENABLED: "false"
+          NEXT_PUBLIC_META_PRIVACY_READY: "false"
+          LUDIPIM_SUPPLIER_PUBLICATION_APPROVED: "false"
+        run: pnpm build
       - name: Install Playwright temporariamente (sem mudar lockfile)
         run: |
           npm install --prefix /tmp/ludipim-qa --no-save playwright@1.56.1
           /tmp/ludipim-qa/node_modules/.bin/playwright install --with-deps chromium
-      - name: Conferir site publicado, CTAs, menu, FAQ, imagens e overflow
+      - name: Iniciar aplicação do PR
+        run: |
+          pnpm start > /tmp/ludipim-qa-server.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:3000/ > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/ludipim-qa-server.log
+          exit 1
+      - name: Conferir versão do PR, rotas, CTAs, menu, FAQ, imagens e privacidade
         env:
           NODE_PATH: /tmp/ludipim-qa/node_modules
-          SITE_URL: https://ludipim.netlify.app
+          SITE_URL: http://127.0.0.1:3000
         run: node scripts/qa-responsive.cjs
       - name: Salvar screenshots para inspeção humana
         if: always()

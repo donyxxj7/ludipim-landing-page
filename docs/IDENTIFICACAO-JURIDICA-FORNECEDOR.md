@@ -1,6 +1,6 @@
 # Ludipim — dossiê de identificação jurídica do fornecedor
 
-Data: 27/10/2026. **Preparação técnica concluída; identificação pública ainda INCOMPLETA.** Esta documentação não constitui parecer jurídico nem substitui validação cadastral/tributária.
+Data: 28/10/2026. **Preparação técnica concluída; identificação pública ainda INCOMPLETA.** Esta documentação não constitui parecer jurídico nem substitui validação cadastral/tributária.
 
 ## Base legal conferida
 
@@ -24,7 +24,7 @@ ANPD: uma operação que realmente se enquadre como agente de pequeno porte pode
 1. **Modalidade de venda:** titular confirmou que ainda **não possui MEI/CNPJ** e pretende operar inicialmente como **pessoa física (CPF)**; a formalização empresarial futura está apenas em planejamento. Isso não demonstra que a venda habitual com finalidade lucrativa esteja dispensada de registro/equiparação tributária. **Consultar contador/órgão competente para validar o enquadramento antes da operação regular.**
 2. **Nome civil completo do vendedor:** foi informado privadamente pelo titular; sua publicação depende de autorização explícita e de conferência com o titular cadastrado na Cakto. Não inserir valores pessoais nesta documentação pública.
 3. **Inscrição aplicável:** CPF foi informado pelo titular na conversa privada, sem verificação documental; não publicar sem autorização expressa e revisão da exposição necessária. Não registrar o número neste repositório público.
-4. **Endereço físico:** logradouro e número foram informados pelo titular; cidade, UF e CEP ainda precisam ser confirmados como parte do endereço completo. Não publicar endereço residencial sem autorização explícita e sem analisar alternativa de contato físico/comercial válida; não presumir que caixa postal isolada é suficiente.
+4. **Endereço físico:** logradouro, número, município, UF e CEP foram informados privadamente; o titular confirmou que se trata de sua residência. Não houve verificação postal ou de adequação jurídica. Confirmar eventual complemento. Não publicar endereço residencial sem autorização explícita e sem analisar alternativa de contato físico/comercial válida; não presumir que caixa postal isolada é suficiente.
 5. Verificar se o mesmo responsável/identificação aparece no checkout, recibo e atendimento Cakto, inclusive de maneira compatível com os dados divulgados no site.
 6. Testar contato de suporte e estabelecer procedimento para **confirmar imediatamente o recebimento** de reclamações/solicitações e **responder em até cinco dias**, conforme Decreto 7.962/2013; até o teste, não afirmar que já existe sistema de protocolo automático.
 7. Revisão jurídica/tributária final com dados reais e confirmação de que as páginas correspondem à operação efetiva.
@@ -40,7 +40,7 @@ A Receita Federal também informou que obrigações de CNPJ e documentos fiscais
 
 ## Preparação técnica já realizada
 
-A rota pública `/informacoes-do-fornecedor` está ligada ao rodapé e às políticas. Ela exibe dados cadastrais **somente quando todos os campos de publicação abaixo são preenchidos**. Enquanto faltarem, mostra um aviso verdadeiro de pendência. Isso **não substitui a obrigação de identificar o fornecedor no site**.
+A rota pública `/informacoes-do-fornecedor` está ligada ao rodapé e às políticas. Ela exibe dados cadastrais **somente quando todos os campos abaixo estão completos E a autorização de publicação está explicitamente habilitada**. Dados preenchidos sem essa autorização continuam ocultos. Enquanto houver pendência, mostra um aviso verdadeiro. Isso **não substitui a obrigação de identificar o fornecedor no site**.
 
 | Variável de ambiente Netlify — servidor | Conteúdo a informar DEPOIS de validação e autorização |
 | --- | --- |
@@ -48,12 +48,13 @@ A rota pública `/informacoes-do-fornecedor` está ligada ao rodapé e às polí
 | `LUDIPIM_SUPPLIER_TAX_ID_TYPE` | `CPF` ou `CNPJ` |
 | `LUDIPIM_SUPPLIER_TAX_ID` | Número correspondente, para exibição pública |
 | `LUDIPIM_SUPPLIER_CONTACT_ADDRESS` | Endereço físico completo e autorizado para exibição |
+| `LUDIPIM_SUPPLIER_PUBLICATION_APPROVED` | `true` apenas DEPOIS de autorização explícita do titular para a exposição pública; padrão `false` |
 
 **Segurança e publicação:**
 - **Não inserir valores reais em código, issues, PRs, README, comentários ou logs do GitHub público.**
 - Antes de adicionar variáveis, obter **aprovação explícita do responsável para exibir esses dados no site público**, pois o uso de variáveis de servidor evita o histórico Git, mas não torna a informação privada na página final.
 - Configurar as variáveis na **Netlify do projeto Ludipim** com escopo apropriado e fazer **novo build/deploy de produção** para que a rota estática exiba os valores. Verificar o HTML público; não publicar dados parciais ou incorretos.
-- A página de identificação só exibe o conjunto completo. Se qualquer variável estiver vazia, a identificação fica como **pendente**, e anúncios pagos continuam bloqueados.
+- A página de identificação só exibe o conjunto completo e autorizado. Se qualquer campo estiver vazio ou a autorização não for exatamente `true`, a identificação fica como **pendente**, e anúncios pagos continuam bloqueados.
 - Revisar aviso de privacidade, Termos e a página do fornecedor para consistência; repetir conferência com o checkout da Cakto.
 - Não ativar Meta Pixel, CAPI nem anúncios por causa desta preparação.
 
