@@ -21,13 +21,22 @@ ANPD: uma operação que realmente se enquadre como agente de pequeno porte pode
 
 ## Campos indispensáveis ainda não confirmados
 
-1. **Modalidade de venda:** pessoa física (CPF) ou pessoa jurídica/MEI (CNPJ). Não presumir enquadramento e verificar obrigações cadastrais, fiscais e tributárias com profissional habilitado.
-2. **Nome civil completo do vendedor**, se pessoa física; **razão social**, se pessoa jurídica. Deve corresponder a quem figura como fornecedor na Cakto.
-3. **Inscrição CPF/CNPJ aplicável**, conferida com o titular. CPF e endereço residencial são dados pessoais; definir previamente o que deve ser exposto para atender à lei. **NÃO registrar os valores neste repositório público**.
-4. **Endereço físico verdadeiro e utilizável para localização e contato**, com autorização para publicação. Se usar serviço de endereço comercial, conferir sua validade para essa finalidade; não inventar endereço ou assumir que uma caixa postal isolada é suficiente.
+1. **Modalidade de venda:** titular confirmou que ainda **não possui MEI/CNPJ** e pretende operar inicialmente como **pessoa física (CPF)**; a formalização empresarial futura está apenas em planejamento. Isso não demonstra que a venda habitual com finalidade lucrativa esteja dispensada de registro/equiparação tributária. **Consultar contador/órgão competente para validar o enquadramento antes da operação regular.**
+2. **Nome civil completo do vendedor:** foi informado privadamente pelo titular; sua publicação depende de autorização explícita e de conferência com o titular cadastrado na Cakto. Não inserir valores pessoais nesta documentação pública.
+3. **Inscrição aplicável:** CPF foi informado pelo titular na conversa privada, sem verificação documental; não publicar sem autorização expressa e revisão da exposição necessária. Não registrar o número neste repositório público.
+4. **Endereço físico:** logradouro e número foram informados pelo titular; cidade, UF e CEP ainda precisam ser confirmados como parte do endereço completo. Não publicar endereço residencial sem autorização explícita e sem analisar alternativa de contato físico/comercial válida; não presumir que caixa postal isolada é suficiente.
 5. Verificar se o mesmo responsável/identificação aparece no checkout, recibo e atendimento Cakto, inclusive de maneira compatível com os dados divulgados no site.
 6. Testar contato de suporte e estabelecer procedimento para **confirmar imediatamente o recebimento** de reclamações/solicitações e **responder em até cinco dias**, conforme Decreto 7.962/2013; até o teste, não afirmar que já existe sistema de protocolo automático.
 7. Revisão jurídica/tributária final com dados reais e confirmação de que as páginas correspondem à operação efetiva.
+
+## Atenção tributária para 2026 e 2027
+
+A Receita Federal informa que a pessoa física que exerce **habitual e profissionalmente** atividade econômica com finalidade de lucro pode ser equiparada a pessoa jurídica para fins de tributação. A necessidade de registro e documentação depende da atividade e do enquadramento; **não concluir que é permitido vender rotineiramente sem formalização apenas por usar CPF na Cakto**.
+
+A Receita Federal também informou que obrigações de CNPJ e documentos fiscais para pessoas físicas enquadradas como contribuintes da CBS passaram a produzir efeitos a partir de 1º de janeiro de 2027, segundo Decreto 13.075/2026. Isso não dispensa outras obrigações vigentes em 2026.
+
+- Orientação RFB, IRPF — atividade habitual: https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/pr-irpf-2024.pdf
+- RFB — CNPJ/CBS para PF, 2027: https://www.gov.br/receitafederal/pt-br/assuntos/noticias/emissao-do-cnpj-e-de-documentos-fiscais-por-pessoas-fisicas-contribuintes-da-cbs-comecara-em-1o-de-janeiro-de-2027
 
 ## Preparação técnica já realizada
 
